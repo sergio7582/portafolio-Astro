@@ -407,13 +407,21 @@ body {
     font-size: 1.5rem;
     position: absolute;
     right: 1rem;
-    top: 1.2rem;
+    top: 4px;
     z-index: 1001;
   }
   
   @media (max-width: 768px) {
     .hamburger {
       display: block;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+
+    .nav-container{
+        height: 15px;
     }
   
     .nav-list {
@@ -429,6 +437,7 @@ body {
       text-align: center;
       gap: 1.5rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      margin-top: 0px;
     }
   
     .menu-toggle:checked ~ .nav-list {
