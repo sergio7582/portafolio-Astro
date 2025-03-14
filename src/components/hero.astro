@@ -1,0 +1,13 @@
+---
+const { devInfo } = Astro.props;
+---
+
+<section id="home" class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">{devInfo.name}</h1>
+      <h2 class="hero-subtitle">{devInfo.title}</h2>
+      <p class="hero-bio">{devInfo.bio}</p>
+    </div>
+  </div>
+</section>

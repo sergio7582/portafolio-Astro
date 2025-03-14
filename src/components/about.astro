@@ -1,0 +1,16 @@
+---
+const { about } = Astro.props;
+---
+
+<section id="about" class="about-section">
+  <div class="section-container">
+    <h2 class="section-title">Sobre mi</h2>
+    <div class="about-content">
+      {
+        about.content
+          .split("\n")
+          .map((paragraph) => <p class="about-text">{paragraph}</p>)
+      }
+    </div>
+  </div>
+</section>
