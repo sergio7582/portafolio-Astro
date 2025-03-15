@@ -1,7 +1,14 @@
 export const devInfo = {
     name: "Sergio Mancinas 💻",
     title: "Desarrollador Full Stack .NET",
-    bio: "Soy un desarrollador Full-Stack con 4 años de experiencia en desarrollo web. Tengo una sólida formación en tecnologías como .NET y siempre estoy buscando aprender cosas nuevas.",
+    bio: "Ingeniero en redes y telecomunicaciones con 4 años de experiencia en el desarrollo de software. Me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador.",
+    location: "Durango, México",
+    social: [
+        { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin" },
+        { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf" },
+        { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope" }
+    ]
 };
 
 export const skills = [
@@ -26,6 +33,11 @@ export const projects = [
         details: `Solución para gestionar solicitudes de mantenimiento y soporte técnico.`,
         listDetails: [ '📲 Chat grupal en tiempo real','📎 Adjuntar archivos en tickets y chats','🔔 Notificaciones via email', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones al crear un ticket'],
         image: "/Projects/Tickets/Tickets_home.png",
+        links: [
+            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ]
+
     },
     {
         title: "API de tareas",
@@ -33,13 +45,21 @@ export const projects = [
         details: `API segura para administrar tareas con:`,
         listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
         image: "/Projects/Tasks/Proyecto_de_tareas.png",
+        links: [
+            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ]
     },
     {
-        title: "Aplicacion de recordatorios",
+        title: "Aplicación de recordatorios",
         description: "Tecnologías: Asp .NET API, Angular,SQL, JWT, HangFire",
         details: `Sistema para programar notificaciones:`,
         listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
         image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
+        links: [
+            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ]
     },
     {
         title: "Sistema para compartir archivos",
@@ -47,6 +67,10 @@ export const projects = [
         details: `Plataforma para compartir archivos de forma segura:`,
         listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
         image: "/Projects/Proveedores/sistema_proveedores.png",
+        links: [
+            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ]
     }
 ];
 
@@ -54,3 +78,38 @@ export const about = {
     content: `Soy un Ing en redes y telecomunicaciones ya con 4 años en el desarrollo de software, me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador. Me gusta trabajar en equipo y siempre estoy dispuesto a ayudar a mis compañeros. 
     Me considero una persona proactiva y responsable con capacidad para adaptarme a cualquier entorno de trabajo. Me gustan los videojuegos, el cine y las series de televisión.`,
 };
+
+//Nota: Agregar la sección de educación y experiencia laboral
+export const education = [
+    {
+        title: "Ingeniería en Redes y Telecomunicaciones",
+        institution: "Universidad Politécnica de Durango",
+        date: "2018 - 2021",
+        description: "Ingeniería en Redes y Telecomunicaciones",
+    },
+    {
+        title: "Curso de Desarrollo Web",
+        institution: "Platzi",
+        date: "2020 - 2021",
+        description: "Curso de desarrollo web con HTML, CSS, JavaScript, React y Node.js",
+    },
+];
+
+export const experience = [
+    {
+        title: "Desarrollador Full Stack",
+        company: "DAWS",
+        date: "2022 - Actualidad",
+        description: "Desarrollo de aplicaciones web, móviles y de escritorio con tecnologías .NET y Angular",
+    },
+    {
+        title: "Practicas Profesionales",
+        company: "DAWS",
+        date: "2021 - 2022",
+        description: "Desarrollo de aplicaciones web, móviles con .NET y ReactNative",
+    }
+];
+
+//Nota: Separar las tecnologías por categorías (Frontend, Backend, Bases de datos, Otros)
+//Nota: Agregar un botón para descargar el CV en PDF y visitar pagina de linkedin
+//Nota: Agregar un botón para enviar un correo

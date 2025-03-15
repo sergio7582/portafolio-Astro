@@ -23,6 +23,13 @@ import { Image, getImage } from "astro:assets";
                 <li>{details}</li>
               ))}
             </ul>
+            <div class="project-links">
+                {project.links.map(link => (
+                    <a href={link.url} class="project-link">
+                        <i class={`${link.icon} link-icon`}></i>&ensp;{link.text}
+                    </a>
+                ))}
+            </div>
           </div>
         ))
       }

@@ -88,7 +88,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 0px;
 }
 
 .hero-container {
@@ -99,10 +99,11 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0px;
 }
 
 .hero-subtitle {
+    margin-top: 0px;
     font-size: 2rem;
     color: var(--accent);
     margin-bottom: 1.5rem;
@@ -112,6 +113,23 @@ body {
     font-size: 1.25rem;
     color: var(--text-secondary);
     max-width: 600px;
+}
+
+.hero-social{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--accent);
 }
 
 /* Skills Section */
@@ -189,7 +207,8 @@ body {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .project-image-container {
@@ -305,15 +324,18 @@ body {
     .hero-container {
         padding: 0 1rem;
         text-align: center;
+        justify-content: center;
     }
 
     .hero-title {
         font-size: 2.5rem;
-        line-height: 1.2;
+        line-height: 1;
+        margin-bottom: 5px;
     }
 
     .hero-subtitle {
         font-size: 1.5rem;
+        margin-top: 0px;
     }
 
     .hero-bio {
@@ -355,7 +377,6 @@ body {
     }
 
     .project-links {
-        flex-direction: column;
         gap: 0.5rem;
     }
 
@@ -372,7 +393,7 @@ body {
     }
 
     .hero-section {
-        padding-top: 100px;
+        padding-top: 0px;
     }
 }
 
@@ -380,7 +401,7 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
-    }
+    }    
 
     .hero-subtitle {
         font-size: 1.25rem;
@@ -392,6 +413,11 @@ body {
 
     .project-image {
         height: 150px;
+    }
+
+    .hero-social{
+       justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
