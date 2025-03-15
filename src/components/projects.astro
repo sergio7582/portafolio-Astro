@@ -1,5 +1,8 @@
 ---
 const { projects } = Astro.props;
+import { Image, getImage } from "astro:assets";
+
+
 ---
 
 <section id="mywork" class="projects-section">
@@ -10,12 +13,7 @@ const { projects } = Astro.props;
         projects.map((project, index) => (
           <div class="project-card">
             <div class="project-image-container">
-              <img
-                src={project.image}
-                alt={project.title}
-                class="project-image"
-                onclick={`openModal('${project.image}')`}
-              />
+              <Image class="project-image" width={100} height={100} onclick={`openModal('${project.image}')`} src={project.image} alt={project.title} inferSize={true} ></Image>
             </div>
             <h3 class="project-title">{project.title}</h3>
             <p class="project-description">{project.description}</p>
@@ -42,7 +40,7 @@ const { projects } = Astro.props;
   <!-- Modal -->
   <div id="imageModal" class="modal" onclick="closeModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
-      <img id="expandedImg" src="" alt="Imagen expandida" />
+      <Image src="/" id="expandedImg" alt="Text" width={100} height={100} ></Image>
     </div>
   </div>
 
@@ -51,6 +49,7 @@ const { projects } = Astro.props;
       const modal = document.getElementById("imageModal");
       const expandedImg = document.getElementById("expandedImg");
       expandedImg.src = img;
+      expandedImg.alt = "Imagen de proyecto expandida"
       modal.classList.add("open");
     }
 
