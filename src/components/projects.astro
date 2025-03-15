@@ -13,7 +13,7 @@ import { Image, getImage } from "astro:assets";
         projects.map((project, index) => (
           <div class="project-card">
             <div class="project-image-container">
-              <Image class="project-image" quality={"max"} width={100} height={100} onclick={`openModal('${project.image}')`} src={project.image} alt={project.title} ></Image>
+              <Image class="project-image" onclick={`openModal('${project.image}')`} src={project.image} alt={project.title} ></Image>
             </div>
             <h3 class="project-title">{project.title}</h3>
             <p class="project-description">{project.description}</p>
