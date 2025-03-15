@@ -107,6 +107,7 @@ body {
     font-size: 2rem;
     color: var(--accent);
     margin-bottom: 1.5rem;
+    height: 40px;
 }
 
 .hero-bio {

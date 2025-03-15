@@ -6,7 +6,7 @@ const { devInfo } = Astro.props;
   <div class="hero-container">
     <div class="hero-content">
       <h1 class="hero-title">{devInfo.name}</h1>
-      <h2 class="hero-subtitle">{devInfo.title}</h2>
+      <h2 id="animate-text" class="hero-subtitle">{devInfo.title}</h2>
       <p class="hero-bio">{devInfo.bio}</p>
       <div class="hero-social">
         {devInfo.social.map((social) => ( 
@@ -22,3 +22,26 @@ const { devInfo } = Astro.props;
     </div>
   </div>
 </section>
+
+<script>
+  const text = document.getElementById("animate-text");
+  let str = text.innerHTML;
+  text.innerHTML = "";
+
+  // Declaramos una variable en la que asignaremos un valor para que sea el tiempo en ms que durará la función setTimeout
+  const speed = 80;
+  let i = 0;
+
+  // Esta función recorre todos los caracteres nuestro texto
+  const typeWriter = () => {
+    if (i < str.length) {
+      text.innerHTML += str.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  };
+
+  // Acá ejecutamos la función
+  setTimeout(typeWriter, speed);
+
+</script>
