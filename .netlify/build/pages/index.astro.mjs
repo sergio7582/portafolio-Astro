@@ -1,1 +1,2 @@
-// Contents removed by Astro as it's used for prerendering only
+export { a as page } from '../chunks/index_BV48LWNo.mjs';
+export { renderers } from '../renderers.mjs';

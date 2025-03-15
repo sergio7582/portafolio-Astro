@@ -205,6 +205,9 @@ body {
     padding: 1.5rem;
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -216,7 +219,7 @@ body {
     overflow: hidden;
     border-radius: 0.25rem;
     cursor: pointer;
-    box-shadow:var(--dark-bg) 0px 0px 4rem 1rem;
+    box-shadow: var(--dark-bg) 0px 0px 4rem 1rem;
 }
 
 .project-image {
@@ -238,7 +241,23 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.project-details{
+.project-technologies {
+    margin-top: 20px;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+}
+
+.project-tag {
+    border: solid 1px #1f2937;
+    border-radius: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #1c90a6;
+}
+
+.project-details {
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
@@ -246,6 +265,7 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .project-link {

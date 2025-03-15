@@ -29,48 +29,70 @@ export const skills = [
 export const projects = [
     {
         title: "Sistema de tickets",
-        description: "Tecnologías: Asp .NET, SQL, SignalR, Bootstrap",
-        details: `Solución para gestionar solicitudes de mantenimiento y soporte técnico.`,
-        listDetails: [ '📲 Chat grupal en tiempo real','📎 Adjuntar archivos en tickets y chats','🔔 Notificaciones via email', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones al crear un ticket'],
+        description: "Asp .NET, SQL, SignalR, Bootstrap",
+        details: `Solución para gestionar solicitudes de mantenimiento y soporte técnico con:`,
+        listDetails: [ '📲 Chat grupal en tiempo real','📎 Posibilidad de adjuntar archivos','🔔 Notificaciones via correo', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones por departamento'],
         image: "/Projects/Tickets/Tickets_home.png",
         links: [
-            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
             { text: "Code", url: "#", icon: "fab fa-github" },
-        ]
+        ],
+        technologies: [
+            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'SignalR', icon: ''},
+            { name: 'Bootstrap', icon: ''}
+        ],
 
     },
     {
         title: "API de tareas",
-        description: "Tecnologías: Asp .NET API, SQL, JWT",
+        description: "Asp .NET API, SQL, JWT",
         details: `API segura para administrar tareas con:`,
         listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
         image: "/Projects/Tasks/Proyecto_de_tareas.png",
         links: [
-            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
             { text: "Code", url: "#", icon: "fab fa-github" },
-        ]
+        ],
+        technologies: [
+            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'JWT', icon: ''},
+        ],
     },
     {
         title: "Aplicación de recordatorios",
-        description: "Tecnologías: Asp .NET API, Angular,SQL, JWT, HangFire",
+        description: "Asp .NET API, Angular,SQL, JWT, HangFire",
         details: `Sistema para programar notificaciones:`,
         listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
         image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
         links: [
-            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
             { text: "Code", url: "#", icon: "fab fa-github" },
-        ]
+        ],
+        technologies: [
+            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
+            { name: 'Angular', icon: 'fab fa-angular' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'HangFire', icon: ''},
+        ],
     },
     {
         title: "Sistema para compartir archivos",
-        description: "Tecnologías: Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
+        description: "Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
         details: `Plataforma para compartir archivos de forma segura:`,
         listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
         image: "/Projects/Proveedores/sistema_proveedores.png",
         links: [
             { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
             { text: "Code", url: "#", icon: "fab fa-github" },
-        ]
+        ],
+        technologies: [
+            { name: 'Asp .NET Core MVC', icon: 'fa-brands fa-windows' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'JWT', icon: ''},
+            { name: 'Azure Web App', icon: 'fa-solid fa-cloud'},
+            { name: 'SmarterASP .NET', icon: ''},
+            { name: 'CloudFlare', icon: ''},
+        ],
     }
 ];
 
