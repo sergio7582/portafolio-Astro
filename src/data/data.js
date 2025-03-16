@@ -4,10 +4,10 @@ export const devInfo = {
     bio: "Ingeniero en redes y telecomunicaciones con 4 años de experiencia en el desarrollo de software. Me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador.",
     location: "Durango, México",
     social: [
-        { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github" },
-        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin" },
-        { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf" },
-        { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope" }
+        { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github", title: "Visitar mi página de GitHub" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin", title: "Visitar mi página de LinkedIn" },
+        { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf", title: "Descargar mi CV" },
+        { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope", title: "Enviarme un correo electrónico" },
     ]
 };
 
@@ -135,3 +135,4 @@ export const experience = [
 //Nota: Separar las tecnologías por categorías (Frontend, Backend, Bases de datos, Otros)
 //Nota: Agregar un botón para descargar el CV en PDF y visitar pagina de linkedin
 //Nota: Agregar un botón para enviar un correo
+//Nota: Cambiar el estilo de las habilidades que sea una linea vertical con iconos que se mueva infinitamente y que al pasar el mouse se detenga y muestre el nombre de la habilidad

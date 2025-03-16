@@ -21,7 +21,7 @@ const $$Hero = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Hero;
   const { devInfo } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<section id="home" class="hero-section"> <div class="hero-container"> <div class="hero-content"> <h1 class="hero-title">${devInfo.name}</h1> <h2 id="animate-text" class="hero-subtitle">${devInfo.title}</h2> <p class="hero-bio">${devInfo.bio}</p> <div class="hero-social"> ${devInfo.social.map((social) => renderTemplate`<a${addAttribute(social.url, "href")} class="social-link" target="_blank" download> <i${addAttribute(`${social.icon}`, "class")}></i> ${social.text} </a>`)} </div> </div> </div></section> ${renderScript($$result, "C:/Projects/portafolio-Astro/src/components/hero.astro?astro&type=script&index=0&lang.ts")}`;
+  return renderTemplate`${maybeRenderHead()}<section id="home" class="hero-section"> <div class="hero-container"> <div class="hero-content"> <h1 class="hero-title">${devInfo.name}</h1> <h2 id="animate-text" class="hero-subtitle">${devInfo.title}</h2> <p class="hero-bio">${devInfo.bio}</p> <div class="hero-social"> ${devInfo.social.map((social) => renderTemplate`<a${addAttribute(social.url, "href")} class="social-link"${addAttribute(social.title, "title")} target="_blank" rel="noopener noreferrer" download> <i${addAttribute(`${social.icon}`, "class")}></i> </a>`)} </div> </div> </div></section> ${renderScript($$result, "C:/Projects/portafolio-Astro/src/components/hero.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Projects/portafolio-Astro/src/components/hero.astro", void 0);
 
 const VALID_SUPPORTED_FORMATS = [
@@ -1226,7 +1226,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_TG-O0e_4.mjs'
+      './sharp_CNA368cW.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -1502,10 +1502,10 @@ const devInfo = {
     bio: "Ingeniero en redes y telecomunicaciones con 4 años de experiencia en el desarrollo de software. Me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador.",
     location: "Durango, México",
     social: [
-        { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github" },
-        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin" },
-        { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf" },
-        { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope" }
+        { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github", title: "Visitar mi página de GitHub" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin", title: "Visitar mi página de LinkedIn" },
+        { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf", title: "Descargar mi CV" },
+        { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope", title: "Enviarme un correo electrónico" },
     ]
 };
 
@@ -1602,6 +1602,7 @@ const about = {
 //Nota: Separar las tecnologías por categorías (Frontend, Backend, Bases de datos, Otros)
 //Nota: Agregar un botón para descargar el CV en PDF y visitar pagina de linkedin
 //Nota: Agregar un botón para enviar un correo
+//Nota: Cambiar el estilo de las habilidades que sea una linea vertical con iconos que se mueva infinitamente y que al pasar el mouse se detenga y muestre el nombre de la habilidad
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;

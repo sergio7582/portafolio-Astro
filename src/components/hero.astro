@@ -9,14 +9,15 @@ const { devInfo } = Astro.props;
       <h2 id="animate-text" class="hero-subtitle">{devInfo.title}</h2>
       <p class="hero-bio">{devInfo.bio}</p>
       <div class="hero-social">
-        {devInfo.social.map((social) => ( 
+        {devInfo.social.map((social) => (
           <a
             href={social.url}
             class="social-link"
+            title={social.title}
             target="_blank"
+            rel="noopener noreferrer"
             download>
             <i class={`${social.icon}`}></i>
-            {social.text}
           </a>
         ))}
     </div>
