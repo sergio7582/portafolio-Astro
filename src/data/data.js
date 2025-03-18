@@ -12,18 +12,22 @@ export const devInfo = {
 };
 
 export const skills = [
-    { name: ".NET Core", icon: "fa-brands fa-windows"},
-    { name: "C#", icon: "fas fa-code" },
-    { name: "Angular", icon: "fab fa-angular" },
-    { name: "JavaScript/TypeScript", icon: "fab fa-js" },
-    { name: "HTML", icon: "fa-brands fa-html5" },
-    { name: "CSS", icon: "fa-brands fa-css3" },
-    { name: "Bootstrap", icon: "fab fa-bootstrap" },
-    { name: "Azure DevOps", icon: "fa-solid fa-cloud" },
-    { name: "Node.js", icon: "fab fa-node-js" },
-    { name: "SQL", icon: "fas fa-database" },
-    { name: "Kotlin", icon: "fa-brands fa-kickstarter" },
-    { name: "Git", icon: "fab fa-git" },
+    { name: "C#", image: "/icons/csharp.svg" },
+    { name: ".NET Core", image: "/icons/dotnet-tile.svg" },
+    { name: "HTML", image: "/icons/html5.svg" },
+    { name: "CSS", image: "/icons/css_old.svg" },
+    { name: "JavaScript", image: "/icons/javascript.svg" },
+    { name: "TypeScript", image: "/icons/typescript.svg" },
+    { name: "Angular", image: "/icons/angular.svg" },
+    { name: "Bootstrap", image: "/icons/bootstrap.svg" },
+    { name: "Azure DevOps", image: "/icons/azure.svg" },
+    { name: "SQL", image: "/icons/sql-server.svg" },
+    { name: "REDIS", image: "/icons/redis.svg" },
+    { name: "Kotlin", image: "/icons/kotlin.svg" },
+    { name: "Git", image: "/icons/git.svg" },
+    { name: "PostMan", image: "/icons/postman.svg" },
+    { name: "VisualStudio", image: "/icons/visual-studio.svg" },
+    
 ];
 
 export const projects = [
@@ -32,7 +36,7 @@ export const projects = [
         description: "Asp .NET, SQL, SignalR, Bootstrap",
         details: `Solución para gestionar solicitudes de mantenimiento y soporte técnico con:`,
         listDetails: [ '📲 Chat grupal en tiempo real','📎 Posibilidad de adjuntar archivos','🔔 Notificaciones via correo', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones por departamento'],
-        image: "/Projects/Tickets/Tickets_home.png",
+        image: "/Projects/Tickets_home.webp",
         links: [
             { text: "Code", url: "#", icon: "fab fa-github" },
         ],
@@ -45,26 +49,28 @@ export const projects = [
 
     },
     {
-        title: "API de tareas",
-        description: "Asp .NET API, SQL, JWT",
-        details: `API segura para administrar tareas con:`,
-        listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
-        image: "/Projects/Tasks/Proyecto_de_tareas.png",
+        title: "Recuperar datos del SAT",
+        description: "",
+        details: `Solución para recuperar los datos fiscales escaneado QR de la constancia fiscal con:`,
+        listDetails: ['🗄️ Guardado en base de datos relacional.', '🧷 Buscador de información con RFC o CURP.', '📃 Descarga de reporte excel por rango de fechas.'],
+        image: "/Projects/scansat.webp",
         links: [
             { text: "Code", url: "#", icon: "fab fa-github" },
         ],
         technologies: [
-            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
+            { name: 'Asp .NET MVC', icon: 'fa-brands fa-windows' },
             { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'JWT', icon: ''},
+            { name: 'Bootstrap', icon: ''},
+            { name: 'JS', icon: ''}
         ],
     },
+    
     {
         title: "Aplicación de recordatorios",
         description: "Asp .NET API, Angular,SQL, JWT, HangFire",
         details: `Sistema para programar notificaciones:`,
         listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
-        image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
+        image: "/Projects/agregar_nuevo_recordatorio.webp",
         links: [
             { text: "Code", url: "#", icon: "fab fa-github" },
         ],
@@ -80,7 +86,7 @@ export const projects = [
         description: "Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
         details: `Plataforma para compartir archivos de forma segura:`,
         listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
-        image: "/Projects/Proveedores/sistema_proveedores.png",
+        image: "/Projects/sistema_proveedores.webp",
         links: [
             { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
             { text: "Code", url: "#", icon: "fab fa-github" },
@@ -93,7 +99,22 @@ export const projects = [
             { name: 'SmarterASP .NET', icon: ''},
             { name: 'CloudFlare', icon: ''},
         ],
-    }
+    },
+    {
+        title: "API de tareas",
+        description: "Asp .NET API, SQL, JWT",
+        details: `API segura para administrar tareas con:`,
+        listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
+        image: "/Projects/Proyecto_de_tareas.webp",
+        links: [
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ],
+        technologies: [
+            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'JWT', icon: ''},
+        ],
+    },
 ];
 
 export const about = {
