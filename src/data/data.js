@@ -34,7 +34,7 @@ export const projects = [
         listDetails: [ '📲 Chat grupal en tiempo real','📎 Posibilidad de adjuntar archivos','🔔 Notificaciones via correo', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones por departamento'],
         image: "/Projects/Tickets_home.webp",
         links: [
-            { text: "Code", url: "https://github.com/sergio7582/TicketsSystem", icon: "fab fa-github" },
+            { text: "Código", url: "https://github.com/sergio7582/TicketsSystem", icon: "fab fa-github" },
         ],
         technologies: [
             { name: '.NET', icon: 'fa-brands fa-windows' },
@@ -61,56 +61,21 @@ export const projects = [
         ],
     },
     {
-        title: "Recuperar datos del SAT",
+        title: "Scripting C#",
         description: "",
-        details: `Solución para recuperar los datos fiscales escaneado QR de la constancia fiscal con:`,
-        listDetails: ['🗄️ Guardado en base de datos relacional.', '🧷 Buscador de información con RFC o CURP.', '📃 Descarga de reporte excel por rango de fechas.'],
+        details: `Solución para recuperar los datos fiscales desde la pagina del SAT escaneado QR de la constancia fiscal con:`,
+        listDetails: ['🗄️ Guardado en base de datos.', '🧷 Buscador de información con RFC o CURP.', '📃 Descarga de reporte excel por rango de fechas.'],
         image: "/Projects/scansat.webp",
         links: [
-            // { text: "Code", url: "#", icon: "fab fa-github" },
+            { text: "Código", url: "https://github.com/sergio7582/ScriptingSAT", icon: "fab fa-github" },
         ],
         technologies: [
-            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
+            { name: '.NET', icon: 'fa-brands fa-windows' },
             { name: 'SQL', icon: 'fas fa-database' },
             { name: 'Bootstrap', icon: ''},
             { name: 'JS', icon: ''}
         ],
     },
-    {
-        title: "Aplicación de recordatorios",
-        description: "Asp .NET API, Angular,SQL, JWT, HangFire",
-        details: `Sistema para programar notificaciones:`,
-        listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
-        image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
-        links: [
-            { text: "Code", url: "#", icon: "fab fa-github" },
-        ],
-        technologies: [
-            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
-            { name: 'Angular', icon: 'fab fa-angular' },
-            { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'HangFire', icon: ''},
-        ],
-    },
-    {
-        title: "Sistema para compartir archivos",
-        description: "Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
-        details: `Plataforma para compartir archivos de forma segura:`,
-        listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
-        image: "/Projects/Proveedores/sistema_proveedores.png",
-        links: [
-            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
-            { text: "Code", url: "#", icon: "fab fa-github" },
-        ],
-        technologies: [
-            { name: 'Asp .NET Core MVC', icon: 'fa-brands fa-windows' },
-            { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'JWT', icon: ''},
-            { name: 'Azure Web App', icon: 'fa-solid fa-cloud'},
-            { name: 'SmarterASP .NET', icon: ''},
-            { name: 'CloudFlare', icon: ''},
-        ],
-    }
 ];
 
 export const about = {
