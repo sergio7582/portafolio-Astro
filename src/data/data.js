@@ -5,7 +5,7 @@ export const devInfo = {
     location: "Durango, México",
     social: [
         { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github", title: "Visitar mi página de GitHub" },
-        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergio-mancinas-7b0b3b1b4/", icon: "fab fa-linkedin", title: "Visitar mi página de LinkedIn" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/sergiomancinas/", icon: "fab fa-linkedin", title: "Visitar mi página de LinkedIn" },
         { text: "CV", url: "/Sergio_Mancinas_CV.pdf", icon: "fas fa-file-pdf", title: "Descargar mi CV" },
         { text: "Correo", url: "mailto:saidels1999@outlook.com", icon: "fas fa-envelope", title: "Enviarme un correo electrónico" },
     ]
