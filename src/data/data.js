@@ -16,7 +16,7 @@ export const skills = [
     { name: "C#", icon: "fas fa-code" },
     { name: "Angular", icon: "fab fa-angular" },
     { name: "JavaScript/TypeScript", icon: "fab fa-js" },
-    { name: "HTML 5", icon: "fa-brands fa-html5" },
+    { name: "HTML", icon: "fa-brands fa-html5" },
     { name: "CSS", icon: "fa-brands fa-css3" },
     { name: "Bootstrap", icon: "fab fa-bootstrap" },
     { name: "Azure DevOps", icon: "fa-solid fa-cloud" },
@@ -32,7 +32,7 @@ export const projects = [
         description: "Asp .NET, SQL, SignalR, Bootstrap",
         details: `Solución para gestionar solicitudes de mantenimiento y soporte técnico con:`,
         listDetails: [ '📲 Chat grupal en tiempo real','📎 Posibilidad de adjuntar archivos','🔔 Notificaciones via correo', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones por departamento'],
-        image: "/Projects/Tickets/Tickets_home.png",
+        image: "/Projects/Tickets_home.webp",
         links: [
             { text: "Code", url: "https://github.com/sergio7582/TicketsSystem", icon: "fab fa-github" },
         ],
@@ -61,21 +61,56 @@ export const projects = [
         ],
     },
     {
-        title: "API de tareas",
-        description: "Asp .NET API, SQL, JWT",
-        details: `API segura para administrar tareas con:`,
-        listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
-        image: "/Projects/Tasks/Proyecto_de_tareas.png",
+        title: "Recuperar datos del SAT",
+        description: "",
+        details: `Solución para recuperar los datos fiscales escaneado QR de la constancia fiscal con:`,
+        listDetails: ['🗄️ Guardado en base de datos relacional.', '🧷 Buscador de información con RFC o CURP.', '📃 Descarga de reporte excel por rango de fechas.'],
+        image: "/Projects/scansat.webp",
         links: [
             // { text: "Code", url: "#", icon: "fab fa-github" },
         ],
         technologies: [
-            { name: '.NET', icon: 'fa-brands fa-windows' },
+            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
             { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'JWT', icon: ''},
+            { name: 'Bootstrap', icon: ''},
+            { name: 'JS', icon: ''}
         ],
     },
-    
+    {
+        title: "Aplicación de recordatorios",
+        description: "Asp .NET API, Angular,SQL, JWT, HangFire",
+        details: `Sistema para programar notificaciones:`,
+        listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
+        image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
+        links: [
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ],
+        technologies: [
+            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
+            { name: 'Angular', icon: 'fab fa-angular' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'HangFire', icon: ''},
+        ],
+    },
+    {
+        title: "Sistema para compartir archivos",
+        description: "Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
+        details: `Plataforma para compartir archivos de forma segura:`,
+        listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
+        image: "/Projects/Proveedores/sistema_proveedores.png",
+        links: [
+            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
+            { text: "Code", url: "#", icon: "fab fa-github" },
+        ],
+        technologies: [
+            { name: 'Asp .NET Core MVC', icon: 'fa-brands fa-windows' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'JWT', icon: ''},
+            { name: 'Azure Web App', icon: 'fa-solid fa-cloud'},
+            { name: 'SmarterASP .NET', icon: ''},
+            { name: 'CloudFlare', icon: ''},
+        ],
+    }
 ];
 
 export const about = {

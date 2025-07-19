@@ -1,21 +1,21 @@
 ---
+import Image from "astro/components/Image.astro";
+
 const { skills } = Astro.props;
 ---
 
 <section id="skills" class="skills-section">
   <div class="section-container">
     <h2 class="section-title">Habilidades</h2>
-    <div class="skills-grid">  
+    <div class="skills-grid">
       {
         skills.map((skill) => (
-          <div class="skill-card" title={skill.name}>
-            <span>{skill.name}</span>
+          <div class="skill-card">
             <i class={`${skill.icon} skill-icon`} />
             {/* <h3 class="skill-name">{skill.name}</h3> */}
           </div>
         ))
       }
-       </div>
     </div>
   </div>
 </section>
