@@ -1,7 +1,7 @@
 export const devInfo = {
     name: "Sergio Mancinas 💻",
     title: "Desarrollador Full Stack .NET",
-    bio: "Ingeniero en redes y telecomunicaciones con 4 años de experiencia en el desarrollo de software. Me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador.",
+    bio: "Ingeniero en redes y telecomunicaciones con más de 4 años de experiencia desarrollando soluciones de software eficientes y escalables. Apasionado por la tecnología y el aprendizaje continuo.",
     location: "Durango, México",
     social: [
         { text: "GitHub", url: "https://github.com/sergio7582", icon: "fab fa-github", title: "Visitar mi página de GitHub" },
@@ -16,7 +16,7 @@ export const skills = [
     { name: "C#", icon: "fas fa-code" },
     { name: "Angular", icon: "fab fa-angular" },
     { name: "JavaScript/TypeScript", icon: "fab fa-js" },
-    { name: "HTML", icon: "fa-brands fa-html5" },
+    { name: "HTML 5", icon: "fa-brands fa-html5" },
     { name: "CSS", icon: "fa-brands fa-css3" },
     { name: "Bootstrap", icon: "fab fa-bootstrap" },
     { name: "Azure DevOps", icon: "fa-solid fa-cloud" },
@@ -34,15 +34,31 @@ export const projects = [
         listDetails: [ '📲 Chat grupal en tiempo real','📎 Posibilidad de adjuntar archivos','🔔 Notificaciones via correo', '👥 Acceso diferenciado (técnicos/usuarios)','🛠️ Ajuste de opciones por departamento'],
         image: "/Projects/Tickets/Tickets_home.png",
         links: [
-            { text: "Code", url: "#", icon: "fab fa-github" },
+            { text: "Code", url: "https://github.com/sergio7582/TicketsSystem", icon: "fab fa-github" },
         ],
         technologies: [
-            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
+            { name: '.NET', icon: 'fa-brands fa-windows' },
             { name: 'SQL', icon: 'fas fa-database' },
             { name: 'SignalR', icon: ''},
             { name: 'Bootstrap', icon: ''}
         ],
 
+    },
+    {
+        title: "Control de facturas de proveedores",
+        description: ".NET, Angular, SQL, JWT, XML",
+        details: `Sistema para gestionar las facturas de tus proveedores, cumplimiento de normativas y complementos de pago con:`,
+        listDetails: ['📄 Manejo de archivos XML y PDF','👨‍💻 Control de usuario','🔒 Recuperación de contraseñas', '📅 Registro de actividad', '📤 Envío de notificaciones'],
+        image: "/Projects/Proveedores/facturas_system.png",
+        links: [
+            { text: "Page", url: "https://kyungshinmx.com/auth/login", icon: "fa-solid fa-globe" },
+        ],
+        technologies: [
+            { name: '.NET', icon: 'fa-brands fa-windows' },
+            { name: 'Angular', icon: 'fab fa-angular' },
+            { name: 'SQL', icon: 'fas fa-database' },
+            { name: 'JWT', icon: ''},
+        ],
     },
     {
         title: "API de tareas",
@@ -51,54 +67,19 @@ export const projects = [
         listDetails: ['🔐 Autenticación con JWT','🔍 Filtrar tareas por categoría', '✅ Todas las operaciones CRUD'],
         image: "/Projects/Tasks/Proyecto_de_tareas.png",
         links: [
-            { text: "Code", url: "#", icon: "fab fa-github" },
+            // { text: "Code", url: "#", icon: "fab fa-github" },
         ],
         technologies: [
-            { name: 'Asp .NET API', icon: 'fa-brands fa-windows' },
+            { name: '.NET', icon: 'fa-brands fa-windows' },
             { name: 'SQL', icon: 'fas fa-database' },
             { name: 'JWT', icon: ''},
         ],
     },
-    {
-        title: "Aplicación de recordatorios",
-        description: "Asp .NET API, Angular,SQL, JWT, HangFire",
-        details: `Sistema para programar notificaciones:`,
-        listDetails: ['⏰ Recordatorios personalizables (diarios/semanales)','📧 Plantillas de email editable','📊 Panel en tiempo real', '🔧 Activar o desactivar recordatorios'],
-        image: "/Projects/Recordatorios/agregar_nuevo_recordatorio.png",
-        links: [
-            { text: "Code", url: "#", icon: "fab fa-github" },
-        ],
-        technologies: [
-            { name: 'Asp .NET', icon: 'fa-brands fa-windows' },
-            { name: 'Angular', icon: 'fab fa-angular' },
-            { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'HangFire', icon: ''},
-        ],
-    },
-    {
-        title: "Sistema para compartir archivos",
-        description: "Asp .NET Core MVC,SQL, JWT, Azure Web App, SmarterASP .NET, CloudFlare",
-        details: `Plataforma para compartir archivos de forma segura:`,
-        listDetails: ['☁️ Almacenamiento en la nube','🔐 Control de usuarios','📂 Creación de carpetas','🌐 CDN para descargas rápidas'],
-        image: "/Projects/Proveedores/sistema_proveedores.png",
-        links: [
-            { text: "Demo", url: "#", icon: "fas fa-external-link-alt" },
-            { text: "Code", url: "#", icon: "fab fa-github" },
-        ],
-        technologies: [
-            { name: 'Asp .NET Core MVC', icon: 'fa-brands fa-windows' },
-            { name: 'SQL', icon: 'fas fa-database' },
-            { name: 'JWT', icon: ''},
-            { name: 'Azure Web App', icon: 'fa-solid fa-cloud'},
-            { name: 'SmarterASP .NET', icon: ''},
-            { name: 'CloudFlare', icon: ''},
-        ],
-    }
+    
 ];
 
 export const about = {
-    content: `Soy un Ing en redes y telecomunicaciones ya con 4 años en el desarrollo de software, me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas y mejorar como persona y desarrollador. Me gusta trabajar en equipo y siempre estoy dispuesto a ayudar a mis compañeros. 
-    Me considero una persona proactiva y responsable con capacidad para adaptarme a cualquier entorno de trabajo. Me gustan los videojuegos, el cine y las series de televisión.`,
+    content: `Soy un Ing en redes y telecomunicaciones ya con 4+ años de experiencia en el desarrollo de software, me apasiona la tecnología y siempre estoy buscando aprender cosas nuevas, mejorar como persona y desarrollador. Me gusta trabajar en equipo y siempre estoy dispuesto a ayudar a mis compañeros. Me considero una persona proactiva y responsable con capacidad para adaptarme a cualquier entorno de trabajo.`,
 };
 
 //Nota: Agregar la sección de educación y experiencia laboral

@@ -7,7 +7,7 @@ import { Image, getImage } from "astro:assets";
 
 <section id="mywork" class="projects-section">
   <div class="section-container">
-    <h2 class="section-title">Mis proyectos</h2>
+    <h2 class="section-title">Algunos de mis proyectos</h2>
     <div class="projects-grid">
       {
         projects.map((project, index) => (
@@ -31,7 +31,7 @@ import { Image, getImage } from "astro:assets";
             </ul>
             <div class="project-links">
                 {project.links.map(link => (
-                    <a href={link.url} class="project-link">
+                    <a href={link.url} target="_blank" class="project-link">
                         <i class={`${link.icon} link-icon`}></i>&ensp;{link.text}
                     </a>
                 ))}

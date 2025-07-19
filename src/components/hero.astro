@@ -29,11 +29,9 @@ const { devInfo } = Astro.props;
   let str = text.innerHTML;
   text.innerHTML = "";
 
-  // Declaramos una variable en la que asignaremos un valor para que sea el tiempo en ms que durará la función setTimeout
   const speed = 80;
   let i = 0;
 
-  // Esta función recorre todos los caracteres nuestro texto
   const typeWriter = () => {
     if (i < str.length) {
       text.innerHTML += str.charAt(i);
@@ -42,7 +40,6 @@ const { devInfo } = Astro.props;
     }
   };
 
-  // Acá ejecutamos la función
   setTimeout(typeWriter, speed);
 
 </script>

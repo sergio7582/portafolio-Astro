@@ -156,6 +156,7 @@ body {
 }
 
 .skill-card {
+    cursor: pointer;
     background-color: var(--secondary-bg);
     border-radius: 0.5rem;
     text-align: center;
@@ -166,6 +167,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 .skill-card:hover {
     background-color: #374151;
@@ -182,6 +184,45 @@ body {
 .skill-name {
     font-size: 1.25rem;
 }
+
+/* Tooltip for skill names */
+
+.skill-card span {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #222f3e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 14px;
+    position: absolute;
+    left: 50%;
+    top: -45px;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+.skill-card:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill-card span::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    border-width: 7px;
+    border-style: solid;
+    border-color: #222f3e transparent transparent transparent;
+}
+
 
 /* Projects Section */
 .projects-section {
